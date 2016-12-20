@@ -6,13 +6,13 @@ Supported operating systems are Windows and any Linux derivative (Even though Li
 MacOS should also work, but for this some additions have to be made to the include and the correct shared/static library files have to be gathered or compiled manually.
 
 ## Usage
-An example on how to use Lua is included in this repository. It shows how to create a Lua state, how to register PB functions to make them accessible from within Lua, and how to load and run Lua-strings or Lua-files.
+An [example](/Example.pb) on how to use Lua is included in this repository. It shows how to create a Lua state, how to register PB functions to make them accessible from within Lua, and how to load and run Lua-strings or Lua-files.
 
 To make Lua work on Windows you have to copy the according (x86 or x64) shared library (*.dll) into the same folder as your application.
 The *.dll files can be found in `Libraries\Lua\Binaries\Windows\x__\`, for Linux no files have to be copied because the static version of Lua is used there for easiness.
 
 ## License
-Lua itself is distributed under the terms of the MIT license.
+Lua itself is distributed under the terms of the [MIT license](/Libraries/Lua/LICENSE).
 
 However, i can't give any warranty on the correctness of the code, therefore:
 ```
