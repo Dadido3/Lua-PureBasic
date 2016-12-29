@@ -1,5 +1,5 @@
 ﻿; #### Translated to PB by David Vogel (Dadido3)
-; #### Updated: 20.12.2016
+; #### Updated: 29.12.2016
 ; #### http://github.com/Dadido3
 ; #### http://D3nexus.de
 
@@ -284,7 +284,7 @@ DeclareModule Lua
     Macro lua_call(L,n,r) : lua_callk(L, (n), (r), 0, #Null) : EndMacro
     
     lua_pcallk.C_int        (*L.lua_State, nargs.C_int, nresults.C_int, errfunc.C_int, *ctx.lua_KContext, k.lua_KFunction)
-    Macro lua_pcall(L,n,r,f) : (lua_pcallk(L, (n), (r), (f), 0, #Null)) : EndMacro
+    Macro lua_pcall(L,n,r,f) : lua_pcallk(L, (n), (r), (f), 0, #Null) : EndMacro
     
     lua_load.C_int          (*L.lua_State, reader.lua_Reader, *dt, chunkname.p-utf8, mode.p-utf8)
     
@@ -588,7 +588,7 @@ EndModule
 ; * SOFTWARE Or THE USE Or OTHER DEALINGS IN THE SOFTWARE.
 ; ******************************************************************************/
 ; IDE Options = PureBasic 5.42 LTS (Windows - x64)
-; CursorPosition = 21
+; CursorPosition = 3
 ; Folding = --------
 ; EnableUnicode
 ; EnableXP
