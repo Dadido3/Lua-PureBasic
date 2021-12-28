@@ -9,9 +9,9 @@ DeclareModule Lua
     CompilerCase #PB_OS_Windows
       CompilerSelect #PB_Compiler_Processor
         CompilerCase #PB_Processor_x86
-          #Lua_Library_File = "/Binaries/Windows/x86/lua53.lib" ; Windows x86
+          #Lua_Library_File = ".\Binaries\Windows\x86\lua53.lib" ; Windows x86
         CompilerCase #PB_Processor_x64
-          #Lua_Library_File = "/Binaries/Windows/x64/lua53.lib" ; Windows x86-64
+          #Lua_Library_File = ".\Binaries\Windows\x64\lua53.lib" ; Windows x86-64
       CompilerEndSelect
       
     CompilerCase #PB_OS_Linux
@@ -587,11 +587,3 @@ EndModule
 ; * TORT Or OTHERWISE, ARISING FROM, OUT OF Or IN CONNECTION With THE
 ; * SOFTWARE Or THE USE Or OTHER DEALINGS IN THE SOFTWARE.
 ; ******************************************************************************/
-; IDE Options = PureBasic 5.42 LTS (Windows - x64)
-; CursorPosition = 3
-; Folding = --------
-; EnableUnicode
-; EnableXP
-; EnableCompileCount = 6
-; EnableBuildCount = 0
-; EnableExeConstant
